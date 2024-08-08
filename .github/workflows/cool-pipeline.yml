@@ -1,5 +1,4 @@
 name: Lab 3 Create Artifact
-name: Lab 3 Create Artifact
 
 on:
   push:
@@ -18,9 +17,8 @@ jobs:
         node-version: "18"
     - name: Pretend to build
       run: echo Pretending to build some kind of app...
-    - name: Push artifact text.txt
+    - name: Push artifact test.txt
       uses: actions/upload-artifact@v3
       with:
-        name: my-artifact
-        path: test.txt
+        name: my-artifact path: test.txt
 
